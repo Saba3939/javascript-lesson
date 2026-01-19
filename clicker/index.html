@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>クリッカーゲーム</title>
+		<!-- Step 2 Lv.1: CSS基礎 - 見た目を作る部分 -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- ゲーム画面（左側） -->
+		<div class="game-area">
+			<div class="score-container">
+				<!-- Step 2 Lv.1 HTML基礎: idをつけてJSから操作する -->
+				<div id="score">0</div>
+				<div class="unit">円</div>
+				<!-- Step 1 改造: ここを変えると単位が変わる -->
+				<div id="sps">秒間: 0 円</div>
+			</div>
+
+			<!-- Step 1 改造: この絵文字を変えると推しになる -->
+			<button id="clickBtn">🍙</button>
+		</div>
+
+		<!-- ショップ画面（右側） -->
+		<div class="shop-area">
+			<div class="shop-title">ショップ</div>
+			<!-- ここにJSでアイテムリストを追加します -->
+			<div id="shopContainer"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
