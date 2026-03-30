@@ -1,0 +1,54 @@
+# Phase 1: HTML骨組みを作る
+
+**ファイル**: `index.html`（新規作成）
+
+---
+
+## 書くコード
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>クリッカーゲーム</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- ゲーム画面（左側） -->
+		<div class="game-area">
+			<div class="score-container">
+				<div id="score">0</div>
+				<div class="unit">円</div>
+				<div id="sps">秒間: 0 円</div>
+			</div>
+			<button id="clickBtn">🍙</button>
+		</div>
+
+		<!-- ショップ画面（右側） -->
+		<div class="shop-area">
+			<div class="shop-title">ショップ</div>
+			<div id="shopContainer">
+				<!-- Phase 2b でスタイルを確認するためのダミー（Phase 5a で削除） -->
+				<div class="shop-item">
+					<div class="item-info">
+						<span class="item-name">強化カーソル</span>
+						<span class="item-cost">15円</span>
+					</div>
+					<div class="item-count">0</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
+```
+
+---
+
+## ポイント
+
+- `id="score"` / `id="clickBtn"` / `id="shopContainer"` は後でJSから操作するための名前
+- `<link rel="stylesheet" href="style.css">` でCSSファイルを読み込む
+- `<script src="script.js">` は `</body>` の直前に書く（HTMLが読み込まれてからJSを動かすため）

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>クリッカーゲーム</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- ゲーム画面（左側） -->
+		<div class="game-area">
+			<div class="score-container">
+				<div id="score">0</div>
+				<div class="unit">円</div>
+				<div id="sps">秒間: 0 円</div>
+			</div>
+			<button id="clickBtn">🍙</button>
+		</div>
+
+		<!-- ショップ画面（右側） -->
+		<div class="shop-area">
+			<div class="shop-title">ショップ</div>
+			<div id="shopContainer"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
