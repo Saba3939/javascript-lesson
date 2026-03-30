@@ -1,17 +1,26 @@
 ---
 marp: true
-theme: default
+theme: kosyu
 paginate: true
 ---
 
+<!-- _class: lead -->
+
 # Step 2 Lv.8
-## スタイルの動的操作
+# スタイルの動的操作
 
 ---
 
 ## 目標
 
-**ゲームの演出（フィードバック）を作れるようになろう！**
+ゲームの演出（フィードバック）を作れるようになろう！
+
+---
+
+<!-- _class: section-header -->
+
+# スタイル操作
+## JSで見た目を変えよう
 
 ---
 
@@ -20,10 +29,7 @@ paginate: true
 Lv.1ではHTMLに直接 `style` を書きましたが、JavaScriptを使えば「後から」見た目を変えることができます。
 例えば、「スコアが1000を超えたら文字を赤くする」といった演出ができます。
 
----
-
 ### 書き方のルール
-
 `要素.style.プロパティ名 = "値"` という形で書きます。
 
 ```javascript
@@ -36,9 +42,21 @@ title.style.color = "red";
 title.style.fontSize = "50px";
 ```
 
-> **注意点**: CSSでは `font-size` のようにハイフンを使いますが、JSでは `fontSize` のように **キャメルケース（大文字区切り）** になります。
-> - `background-color` → `backgroundColor`
-> - `margin-top` → `marginTop`
+---
+
+### 注意点: キャメルケース
+
+CSSでは `font-size` のようにハイフンを使いますが、JSでは `fontSize` のように **キャメルケース（大文字区切り）** になります。
+
+- `background-color` → `backgroundColor`
+- `margin-top` → `marginTop`
+
+---
+
+<!-- _class: section-header -->
+
+# やってみよう！
+## 実際に手を動かしてみよう 🖊️
 
 ---
 
