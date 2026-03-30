@@ -1,18 +1,27 @@
 ---
 marp: true
-theme: default
+theme: kosyu
 paginate: true
 ---
 
+<!-- _class: lead -->
+
 # Step 2 Lv.7
-## DOM操作（HTML連携）
+# DOM操作（HTML連携）
 
 ---
 
 ## 目標
 
-**プログラム（計算結果）を画面に反映できるようになろう！**
+プログラム（計算結果）を画面に反映できるようになろう！
 **これが一番大事なステップです！**
+
+---
+
+<!-- _class: section-header -->
+
+# DOM操作
+## HTMLをJSから動かそう
 
 ---
 
@@ -21,10 +30,7 @@ paginate: true
 JavaScriptからHTMLを操ることを「DOM操作」と言います。
 「HTMLにある要素（タグ）を見つけて、中身を書き換える」ことができます。
 
----
-
 ### 要素を見つける（取得）
-
 Lv.1でつけた `id` を使って、HTMLの要素を見つけます。
 
 ```javascript
@@ -45,22 +51,34 @@ scoreElement.innerText = 100;
 
 ---
 
+<!-- _class: section-header -->
+
+# イベント
+## クリックに反応させよう
+
+---
+
 ## 2. イベント（クリックした時）
 
 「ボタンが押された時」に何かをするには、HTML側に `onclick`（オン・クリック）を書きます。
 
-**HTML側:**
 ```html
 <!-- ボタンを押したら、addScore() という関数を実行してね -->
 <button onclick="addScore()">クリック！</button>
 ```
 
-**JavaScript側:**
 ```javascript
 function addScore() {
     console.log("ボタンが押されました！");
 }
 ```
+
+---
+
+<!-- _class: section-header -->
+
+# やってみよう！
+## 実際に手を動かしてみよう 🖊️
 
 ---
 
@@ -91,10 +109,8 @@ let count = 0;
 function countUp() {
     // 1. 計算する
     count += 1;
-
     // 2. 画面の要素を見つける
     let scoreEl = document.getElementById("score");
-
     // 3. 画面を書き換える
     scoreEl.innerText = count;
 }
