@@ -101,6 +101,7 @@ function addScore() {
 <div id="score">0</div>
 <button onclick="countUp()">増やす</button>
 ```
+---
 
 **JavaScript**
 ```javascript

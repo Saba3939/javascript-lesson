@@ -77,7 +77,6 @@ console.log(cursor.price); // 15 と表示される
 ```javascript
 // 好きな食べ物リスト
 const foods = ["ラーメン", "カレー", "寿司"];
-
 // アイテムリスト（オブジェクトを並べることもできる！）
 const items = [
     { name: "カーソル", price: 15 },
